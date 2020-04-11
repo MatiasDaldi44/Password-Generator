@@ -15,9 +15,15 @@
       <div class="card">
         <div class="card-header">
           <h2>
-            How many characters?<input type="number" id="charNum" value="8" min="8" max="128" /><br>
+            How many characters?<input type="range" id="charNum" value="68" min="8" max="128" onchange="updateTextInput(this.value)" /><input type="text" id="textInput" value="68" style="width: 30px; margin-left: 10px;"><br>
+          </h2>
+          <h2>
             Would you like numbers?: <input type="checkbox" id="num"><br>
+          </h2>  
+          <h2>
             Would you like lower case letters: <input type="checkbox" id="low"><br>
+          </h2>  
+          <h2>
             Would you like special characters: <input type="checkbox" id="spec"><br>
           </h2>
         </div>

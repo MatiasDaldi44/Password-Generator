@@ -26,3 +26,7 @@ function generatePassword(l, characters) {
   }
   return pwd;
 }
+
+function updateTextInput(val) {
+  document.getElementById('textInput').value=val; 
+}
