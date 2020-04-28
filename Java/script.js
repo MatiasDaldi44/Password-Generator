@@ -8,8 +8,6 @@ var numbers = "0123456789";
 var special = "!@#$%^&*()-+=<>?~[]{}";
 var passLength = "";
 
-// var howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.") 
-
 
 startUp();
 
