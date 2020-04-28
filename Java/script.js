@@ -6,19 +6,23 @@ var alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var alpha2 = "abcdefghijklmnopqrstuvwxyz";
 var numbers = "0123456789";
 var special = "!@#$%^&*()-+=<>?~[]{}";
+var passLength = "";
 
-var howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.")
+// var howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.") 
+
 
 startUp();
 
 generateBtn.addEventListener("click", function() {
-  yourPass.value = generatePassword(howMany, characters)
+  yourPass.value = generatePassword(passLength, characters)
 })
 
 function startUp() {
+  var howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.") 
   if (howMany < 8 || howMany > 128) {
     alert("Please reload and pick a number between 8-128")
   } else {
+    passLength += howMany
     var alphaConfirm = confirm("Would you like capital letter?")
     var alpha2Confirm = confirm("Would you like lower case letters?")
     var numbersConfirm = confirm("Would you like numbers?")
