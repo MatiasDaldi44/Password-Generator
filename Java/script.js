@@ -1,4 +1,3 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 var yourPass = document.getElementById("password");
 var characters = "";
@@ -11,12 +10,12 @@ var passLength = "";
 
 startUp();
 
-generateBtn.addEventListener("click", function() {
+generateBtn.addEventListener("click", function () {
   yourPass.value = generatePassword(passLength, characters)
 })
 
 function startUp() {
-  var howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.") 
+  howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.")
   if (howMany < 8 || howMany > 128) {
     alert("Please reload and pick a number between 8-128")
   } else {
@@ -29,16 +28,16 @@ function startUp() {
 
   if (alphaConfirm === false && alpha2Confirm === false && numbersConfirm === false && specialConfirm === false) {
     alert("You gotta click yes on something, man")
-  } 
+  }
   if (alphaConfirm === true) {
     characters += alpha
-  } 
-  if ( alpha2Confirm === true) {
+  }
+  if (alpha2Confirm === true) {
     characters += alpha2
-  } 
+  }
   if (numbersConfirm === true) {
     characters += numbers
-  } 
+  }
   if (specialConfirm === true) {
     characters += special
   }
