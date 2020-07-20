@@ -7,9 +7,6 @@ var numbers = "0123456789";
 var special = "!@#$%^&*()-+=<>?~[]{}";
 var passLength = "";
 
-
-startUp();
-
 generateBtn.addEventListener("click", function () {
   yourPass.value = generatePassword(passLength, characters)
 })
@@ -50,3 +47,5 @@ function generatePassword(l, characters) {
   }
   return pwd;
 }
+
+startUp();
