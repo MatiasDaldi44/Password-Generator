@@ -16,7 +16,7 @@ generateBtn.addEventListener("click", function () {
 
 function startUp() {
   howMany = prompt("Welcome to your Random Password Generator. Please pick a number between 8-128 for your password.")
-  if (howMany < 8 || howMany > 128) {
+  if (isNaN(howMany) || howMany < 8 || howMany > 128) {
     alert("Please reload and pick a number between 8-128")
   } else {
     passLength += howMany
